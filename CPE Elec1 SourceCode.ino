@@ -94,28 +94,28 @@ void claw()
 // turn
 void turn()
 {
-if(x2<50) //if push the right joystick to the let 
-{
-pos1=pos1+3; 
-myservo1.write(pos1); // arm turns left
-delay(5);
-if(pos1>180) //limit the angle when turn right 
-{
-pos1=180;
-}
+      if(x2<50) //if push the right joystick to the let 
+      {
+            pos1=pos1+3; 
+            myservo1.write(pos1); // arm turns left
+            delay(5);
+      if(pos1>180) //limit the angle when turn right 
+      {
+            pos1=180;
+      }
 
-}
+      }
 
-if(x2>1000) // if push the right joystick to the right
-{
-pos1=pos1-3; 
-myservo1.write(pos1); //servo 1 operates the motion, the arm turns right. 
-delay(5);
-if(pos1<1) // limit the angle when turn left
-{
-pos1=1;
-}
-}
+      if(x2>1000) // if push the right joystick to the right
+      {
+            pos1=pos1-3; 
+            myservo1.write(pos1); //servo 1 operates the motion, the arm turns right. 
+            delay(5);
+      if(pos1<1) // limit the angle when turn left
+      {
+            pos1=1;
+      }
+      }
 }
 
 
@@ -125,27 +125,27 @@ pos1=1;
 // lower arm
 void lower_arm()
 {
-if(y2>1000) // if push the right joystick downward
-{
-pos2=pos2-2;
-myservo2.write(pos2); // lower arm will draw back
-delay(5);
-if(pos2<25) // limit the retracted angle
-{
-pos2=25;
-}
-}
+      if(y2>1000) // if push the right joystick downward
+      {
+            pos2=pos2-2;
+            myservo2.write(pos2); // lower arm will draw back
+            delay(5);
+      if(pos2<25) // limit the retracted angle
+      {
+            pos2=25;
+      }
+      }
 
-if(y2<50) // if push the right joystick upward
-{
-pos2=pos2+2;
-myservo2.write(pos2); // lower arm will stretch out
-delay(5);
-if(pos2>180) // limit the stretched angle
-{
-pos2=180;
-}
-}
+      if(y2<50) // if push the right joystick upward
+      {
+            pos2=pos2+2;
+            myservo2.write(pos2); // lower arm will stretch out
+            delay(5);
+      if(pos2>180) // limit the stretched angle
+      {
+            pos2=180;
+      }
+      }
 }
 
 
@@ -157,25 +157,25 @@ pos2=180;
 //upper arm
 void upper_arm()
 {
-if(y1<50) // if push the left joystick downward
-{
-pos3=pos3-2;
-myservo3.write(pos3); // upper arm will go down
-delay(5);
-if(pos3<1) //  limit the angle when go down 
-{
-pos3=1;
-}
-}
-if(y1>1000) // if push the left joystick upward
-{
-pos3=pos3+2;
-myservo3.write(pos3); // the upper arm will lift
-delay(5);
+      if(y1<50) // if push the left joystick downward
+      {
+            pos3=pos3-2;
+            myservo3.write(pos3); // upper arm will go down
+            delay(5);
+      if(pos3<1) //  limit the angle when go down 
+      {
+            pos3=1;
+      }
+      }
+      if(y1>1000) // if push the left joystick upward
+      {
+            pos3=pos3+2;
+            myservo3.write(pos3); // the upper arm will lift
+            delay(5);
 
-if(pos3>135) //limit the lifting angle 
-{
-pos3=135;
-}
-}
+      if(pos3>135) //limit the lifting angle 
+      {
+            pos3=135;
+      }
+      }
 }
