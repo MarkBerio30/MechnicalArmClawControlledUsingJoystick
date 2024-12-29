@@ -1,5 +1,3 @@
-
-
 # Mechanical Arm Claw Controlled using a Joystick
  - A Mechanical Arm Claw controlled using a Joystick is a robotic device that consists of a mechanical arm and a claw-like gripper that can be manipulated using a joystick. The arm is typically mounted on a base and can be moved in different directions, while the gripper is attached to the end of the arm and is used to pick up and move objects. The joystick is a handheld device that the user can move in different directions to control the movements of the arm and gripper.
 
